@@ -1,0 +1,141 @@
+* {
+    padding: 0.1;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'inter', sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 88vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0c0ce94d;
+}
+/* Define o espaço entre as linhas como 1.2 vezes a altura da fonte */
+.seletor {
+    line-height: 1.1;
+}
+
+.container {
+    width: 75%; /* Reduzido para 90% para caber confortavelmente na tela */
+    max-width: 980px; /* Adicionado um valor máximo para evitar que o contêiner fique muito grande em telas maiores */
+    height: auto; /* Altura automática para se ajustar ao conteúdo */
+    display: flex;
+    flex-wrap: wrap; /* Adicionado para que os elementos possam ser distribuídos em várias linhas */
+    justify-content: center; /* Centraliza os elementos horizontalmente */
+    align-items: flex-start; /* Alinha os elementos no topo */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+    padding: 1rem; /* Ajustado o padding para garantir espaçamento interno */
+}
+
+.form-image {
+    width: 25%; /* Ajustado para 25% para acomodar 4 colunas */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8CD0F;
+    padding: 1rem;
+}
+
+.form-image img {
+    max-width: 100%; /* Adicionado para garantir que a imagem não ultrapasse o contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.form {
+    width: 75%; /* Ajustado para 75% para acomodar 3 colunas */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F8CD0F;
+    padding: 2rem; /* Aumentado o padding para mais espaçamento interno */
+}
+
+.form-header {
+    margin-bottom: 2rem; /* Reduzido o espaçamento inferior para mais compactação */
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Corrigido para ocupar 100% do espaço */
+}
+
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #4CAF50;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+    width: 100%; /* Corrigido para ocupar 100% do espaço */
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem; /* Reduz o espaçamento entre as colunas */
+    width: calc(100% / 3 - 1rem); /* Ajusta a largura para ocupar 33.33% do espaço com margem entre os elementos */
+    line-height: 0.0; /* Define o espaço entre as linhas */
+}
+
+.input-box label {
+    font-size: 1rem; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    color: #333; /* Cor do texto */
+    font-family: 'Calibri', sans-serif; /* Fonte Calibri, ou uma fonte similar, seguida de uma fonte de fallback genérica */
+}
+
+.input-box input[type="text"],
+.input-box textarea,
+.input-box select {
+    margin: 0.3rem 0;
+    padding: 0.3rem 1.2rem; /* Reduzido o padding para deixar os campos mais compactos */
+    border: none;
+    border-radius: 5px; /* Reduzido o raio do border-radius para deixar os cantos menos arredondados */
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 0.9rem; /* Reduzido o tamanho da fonte para 0.9rem (ou o tamanho desejado) */
+}
+
+.input-box input:hover {
+    background-color: #eeeeee75;
+}
+
+.input-box input:focus-visible {
+    outline: 1px solid burlywood;
+}
+
+.gender-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 0.5rem;
+    width: 100%; /* Corrigido para ocupar 100% do espaço */
+}
+
+.gender-title h2 {
+    font-size: 0.8rem; /* Reduzindo o tamanho da fonte para 0.8rem (ou o tamanho desejado) */
+}
+
+.gender-input {
+    display: flex;
+    align-items: center;
+}
+
+.gender-input input {
+    margin-right: 0.35rem;
+}
+
+.gender-input label {
+    font-size: 1rem; /* Ajustado o tamanho da fonte */
+    font-weight: 600;
+    color: #000000c0;
+}
