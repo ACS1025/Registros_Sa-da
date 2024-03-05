@@ -2751,7 +2751,7 @@
 <option value="GEG-6560">GEG-6560</option>
 <option value="GEH-3J48">GEH-3J48</option>
 <option value="GEP-4132">GEP-4132</option>
-<option value="GFIG-8114">GFIG-8114</option>
+<option value="GFG-8114">GFG-8114</option>
 <option value="GFN-0C39">GFN-0C39</option>
 <option value="GFY-4337">GFY-4337</option>
 <option value="GGJ-3B11">GGJ-3B11</option>
@@ -2862,7 +2862,7 @@
 <option value="JXA-4297">JXA-4297</option>
 <option value="JXA-4829">JXA-4829</option>
 <option value="JXA-4946">JXA-4946</option>
-<option value="JXA-4946-SIG">JXA-4946-SIG</option>
+<option value="JXA-4946">JXA-4946</option>
 <option value="JXA-5678">JXA-5678</option>
 <option value="JXA-6926">JXA-6926</option>
 <option value="JXA-7500">JXA-7500</option>
@@ -3153,7 +3153,7 @@
 <option value="JXW-7905">JXW-7905</option>
 <option value="JXW-7925">JXW-7925</option>
 <option value="JXW-8822">JXW-8822</option>
-<option value="JXX-23058">JXX-23058</option>
+<option value="JXX-2358">JXX-2358</option>
 <option value="JXX-2778">JXX-2778</option>
 <option value="JXX-2788">JXX-2788</option>
 <option value="JXX-2808">JXX-2808</option>
@@ -3186,7 +3186,7 @@
 <option value="JZP-3907">JZP-3907</option>
 <option value="JZY-7637">JZY-7637</option>
 <option value="KJP-4C83">KJP-4C83</option>
-<option value="KJXG-4736">KJXG-4736</option>
+<option value="KJX-4736">KJX-4736</option>
 <option value="KNF-3I07">KNF-3I07</option>
 <option value="LXE-6B70">LXE-6B70</option>
 <option value="MBK-1A95">MBK-1A95</option>
@@ -3232,7 +3232,7 @@
 <option value="NKJ-7232">NKJ-7232</option>
 <option value="NKO-2I79">NKO-2I79</option>
 <option value="NNF-5621">NNF-5621</option>
-<option value="NOIL-3769">NOIL-3769</option>
+<option value="NOL-3769">NOL-3769</option>
 <option value="NOJ-0230">NOJ-0230</option>
 <option value="NOJ-0250">NOJ-0250</option>
 <option value="NOJ-0260">NOJ-0260</option>
@@ -3244,7 +3244,7 @@
 <option value="NOJ-3548">NOJ-3548</option>
 <option value="NOJ-4440">NOJ-4440</option>
 <option value="NOJ-4530">NOJ-4530</option>
-<option value="NOJ4530">NOJ4530</option>
+<option value="NOJ-4530">NOJ4-530</option>
 <option value="NOL-2822">NOL-2822</option>
 <option value="NOL-3769">NOL-3769</option>
 <option value="NOL-3779">NOL-3779</option>
@@ -3270,7 +3270,7 @@
 <option value="NOO-5546">NOO-5546</option>
 <option value="NOO-5576">NOO-5576</option>
 <option value="NOO-5616">NOO-5616</option>
-<option value="NOO-5616.">NOO-5616.</option>
+<option value="NOO-5616">NOO-5616</option>
 <option value="NOO-5656">NOO-5656</option>
 <option value="NOO-8346">NOO-8346</option>
 <option value="NOP-4074">NOP-4074</option>
@@ -3412,7 +3412,7 @@
 <option value="RBP-6E48">RBP-6E48</option>
 <option value="RBQ-4I15">RBQ-4I15</option>
 <option value="RBQ-9H21">RBQ-9H21</option>
-<option value="RBQ4J25">RBQ4J25</option>
+<option value="RBQ-4J25">RBQ-4J25</option>
 <option value="RBS-2J65">RBS-2J65</option>
 <option value="RBS-3A15">RBS-3A15</option>
 <option value="RBS-3A35">RBS-3A35</option>
@@ -3515,7 +3515,7 @@
 <option value="SHL-1G95">SHL-1G95</option>
 <option value="SHP-2J48">SHP-2J48</option>
 <option value="SHU-1J17">SHU-1J17</option>
-<option value="SM-0D41">SM-0D41</option>
+<option value="SAM-0D41">SM-0D41</option>
 <option value="SNP-6H48">SNP-6H48</option>
                     </select>
                 </div>
@@ -15935,10 +15935,10 @@
     document.getElementById("doc_destino").addEventListener("change", updateRoute);
 
     function updateRoute() {
-        var origem = document.getElementById("doc_origem").value;
-        var destino = document.getElementById("doc_destino").value;
-        document.getElementById("rota").value = origem + " - " + destino;
-    }
+    var origem = document.getElementById("doc_origem").value;
+    var destino = document.getElementById("doc_destino").value;
+    document.getElementById("rota").value = "XX " + origem + " X " + destino;
+}
 
         // Função para formatar moeda
         function formatarMoeda(input) {
@@ -15954,7 +15954,7 @@
 var yyyy = today.getFullYear();
 var mm = String(today.getMonth() + 1).padStart(2, '0'); // January is 0!
 var dd = String(today.getDate()).padStart(2, '0');
-var formattedDate = yyyy + '-' + mm + 'X' + dd;
+var formattedDate = yyyy + '-' + mm + '-' + dd;
 
 // Define o valor do campo de data para a data atual
 document.getElementById("data_saida").value = formattedDate;
