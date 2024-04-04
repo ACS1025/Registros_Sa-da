@@ -16030,16 +16030,30 @@ var formattedDate = yyyy + '-' + mm + '-' + dd;
 document.getElementById("data_saida").value = formattedDate;
 
 
-        document.getElementById("doc_saida").addEventListener("change", function() {
-            var valorSelecionado = this.value;
-            var carretaStatusInput = document.getElementById("carreta_status");
-            
-            if (valorSelecionado === "MANIFESTO" || valorSelecionado === "MANIFESTO") {
-                carretaStatusInput.value = "CARREGADO";
-            } else {
-                carretaStatusInput.value = "VAZIO";
-            }
-        });
+        
+document.getElementById("ordem").addEventListener("input", function() {
+    var valorSelecionado = this.value;
+    
+    var carretaStatusInput = document.getElementById("carreta_status");
+    
+    if (valorSelecionado === "MANIFESTO" || valorSelecionado === "MANIFESTO") {
+        carretaStatusInput.value = "CARREGADO";
+    } else {
+        carretaStatusInput.value = "VAZIO";
+    }
+});
+
+document.getElementById("doc_saida").addEventListener("change", function() {
+    var valorSelecionado = this.value;
+    
+    var carretaStatusInput = document.getElementById("carreta_status");
+    
+    if (valorSelecionado === "MANIFESTO" || valorSelecionado === "MANIFESTO") {
+        carretaStatusInput.value = "CARREGADO";
+    } else {
+        carretaStatusInput.value = "VAZIO";
+    }
+});
 
     </script>
 </body>
